@@ -1,0 +1,94 @@
+<html>
+
+	<head>
+
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+
+		<script type="text/javascript" src="js/trvsr.js">
+		</script>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+
+				//pakai trvsr disini
+				$(".trvsr").trvsr();
+			});
+		</script>
+
+		<style>
+
+			.trvsr li{
+				list-style: none;
+			}
+
+		</style>
+	</head>
+
+	<body>
+
+		<ul class="trvsr">
+			<li class="t-root">
+				<input type="checkbox" class="t-checkbox"> Induk utama 1
+				<ul>
+					<li>
+						<input type="checkbox" class="t-checkbox"/>Cabang 1
+						<ul>
+							<li>
+								<!-- ujung banget -->
+								<input type="checkbox" class="t-checkbox t-leaf"/>Daun 1
+							</li>
+							<li>
+								<!-- ujung banget -->
+								<input type="checkbox" class="t-checkbox t-leaf"/>Daun 2
+							</li>
+						</ul>
+
+					</li>
+
+				</ul>
+			</li>
+			<li>
+				<input type="checkbox" class="t-checkbox"> Induk utama 2
+				<ul>
+					<li>
+						<input type="checkbox" class="t-checkbox"/>Cabang 2 1
+						<ul>
+							<li>
+								<!-- ujung banget -->
+								<input type="checkbox" class="t-checkbox t-leaf"/>Daun 2 1 1
+							</li>
+						</ul>
+
+					</li>
+					<li>
+						<input type="checkbox" class="t-checkbox"/>Cabang 2 2
+						<ul>
+							<li>
+								<!-- ujung banget -->
+								<input type="checkbox" class="t-checkbox t-leaf"/>Daun 2 2 1
+							</li>
+							<li>
+								<!-- ujung banget -->
+								<input type="checkbox" class="t-checkbox t-leaf"/>Daun 2 2 2
+							</li>
+						</ul>
+
+					</li>
+					<li>
+						<input type="checkbox" class="t-checkbox"/>Cabang 2 3
+						<ul>
+							<li>
+								<!-- ujung banget -->
+								<input id="ck3" type="checkbox" class="t-checkbox t-leaf"/>Daun 2 3 1
+							</li>
+						</ul>
+
+					</li>
+				</ul>
+			</li>
+		</ul>
+
+
+	</body>
+
+</html>
